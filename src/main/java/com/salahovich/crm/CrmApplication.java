@@ -10,5 +10,5 @@ public class CrmApplication extends SpringBootServletInitializer {
 	public static void main(String[] args) {
 		SpringApplication.run(CrmApplication.class, args);
 	}
-
+	
 }
