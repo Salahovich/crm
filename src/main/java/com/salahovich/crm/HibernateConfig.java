@@ -6,13 +6,16 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.context.annotation.Primary;
 import org.springframework.orm.jpa.JpaVendorAdapter;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 
 import jakarta.persistence.EntityManagerFactory;
 
+
 @Configuration
+@EnableAspectJAutoProxy
 public class HibernateConfig {
     @Autowired
     DataSource dataSource;
